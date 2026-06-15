@@ -20,6 +20,22 @@ export default function Phase2() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`Our org has these sensitive repos that need content exclusions:
+- [repo names or patterns for ITAR/SOX/PCI]
+- [repos with partner credentials or PII]
+
+We use [Entra ID / Okta] for SSO with SCIM provisioning.
+We want [3 rollout waves / org-wide day 1].
+
+Generate the content exclusion config, SCIM group mappings,
+and a seat allocation plan with budget.`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

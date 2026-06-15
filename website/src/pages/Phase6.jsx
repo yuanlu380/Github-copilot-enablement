@@ -20,6 +20,22 @@ export default function Phase6() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`We have [X] Copilot seats deployed.
+Our developer fully-loaded cost is ~$[Y]/year.
+Pilot survey showed [Z] hours saved per dev per week.
+
+Generate:
+1. An ROI calculation to present to leadership
+2. A monthly reporting template with key metrics
+3. A quarterly policy review schedule with owners
+4. A seat reclamation process for inactive users`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

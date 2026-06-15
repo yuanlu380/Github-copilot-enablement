@@ -20,6 +20,23 @@ export default function Phase3() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`We're selecting pilot teams from these options:
+- [Team A]: [size] devs, [languages], [greenfield/legacy]
+- [Team B]: [size] devs, [languages], [greenfield/legacy]
+- [Team C]: [size] devs, [languages], [greenfield/legacy]
+
+Our pilot will run [4 weeks]. We need:
+- Team selection recommendations
+- Baseline metrics to capture before starting
+- A training schedule for the pilot
+- Success criteria for the go/no-go decision`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

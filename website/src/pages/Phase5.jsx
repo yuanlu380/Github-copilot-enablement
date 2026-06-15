@@ -20,6 +20,24 @@ export default function Phase5() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`We're rolling out Copilot to [X] developers in [Y] waves.
+Our teams:
+- Wave 1: [teams, sizes, languages]
+- Wave 2: [teams, sizes, languages]
+- Wave 3 (contractors): [X people, limited repo access]
+
+Pilot lessons learned: [key feedback items]
+
+Generate a rollout schedule, champion network plan,
+and a developer onboarding guide we can publish
+to our internal wiki.`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

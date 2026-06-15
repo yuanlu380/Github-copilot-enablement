@@ -20,6 +20,22 @@ export default function Phase1() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`We're deploying GitHub Copilot for a [industry] company with:
+- Developer headcount: [X internal, Y contractors]
+- Compliance frameworks: [SOX, HIPAA, ITAR, PCI-DSS, etc.]
+- Primary languages: [Java, Python, TypeScript, etc.]
+- Code hosting: [GitHub Enterprise Cloud/Server]
+- External users: [describe contractor/partner access]
+
+Generate a compliance assessment, stakeholder RACI matrix,
+and identify which repos need content exclusions.`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

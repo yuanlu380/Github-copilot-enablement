@@ -21,6 +21,23 @@ export default function Phase4() {
       </section>
 
       <section className="content-section">
+        <h2>💡 Try This Prompt</h2>
+        <div className="prompt-example">
+          <p className="prompt-label">Ask the agent:</p>
+          <pre className="code-block">{`Our tech stack:
+- [Java Spring Boot / TypeScript React / Python FastAPI / etc.]
+- Coding conventions: [describe key rules]
+- Domain: [industry-specific terms and concepts]
+- Common tasks developers repeat: [API endpoints, tests, parsers, etc.]
+
+Generate:
+1. A .github/copilot-instructions.md for our repos
+2. 3-5 reusable .prompt.md files for common tasks
+3. A custom agent definition for our domain`}</pre>
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>Step-by-Step Process</h2>
 
         <div className="step">

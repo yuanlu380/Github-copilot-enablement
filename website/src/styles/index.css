@@ -315,6 +315,24 @@ code {
   border-left-color: var(--color-warning);
 }
 
+/* Prompt Examples */
+.prompt-example {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.prompt-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem !important;
+}
+
 /* Phase Navigation */
 .phase-navigation {
   display: flex;
