@@ -110,6 +110,16 @@ You are an expert in our Spring Boot microservices architecture.
         </ul>
       </section>
 
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot" target="_blank" rel="noopener">Adding Custom Instructions</a></li>
+          <li><a href="https://docs.github.com/en/copilot/customizing-copilot/adding-custom-prompt-files" target="_blank" rel="noopener">Adding Custom Prompt Files</a></li>
+          <li><a href="https://code.visualstudio.com/docs/copilot/copilot-customization" target="_blank" rel="noopener">VS Code Copilot Customization</a></li>
+          <li><a href="https://github.blog/developer-skills/github/how-to-write-better-prompts-for-github-copilot/" target="_blank" rel="noopener">Prompt Engineering Guide (GitHub Blog)</a></li>
+        </ul>
+      </section>
+
       <PhaseNavigation
         prevPath="/phase-3"
         prevLabel="Phase 3: Pilot"

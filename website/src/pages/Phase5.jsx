@@ -106,6 +106,16 @@ export default function Phase5() {
         </ul>
       </section>
 
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/driving-copilot-adoption-in-your-company" target="_blank" rel="noopener">Driving Copilot Adoption</a></li>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-for-copilot-in-your-organization" target="_blank" rel="noopener">Managing Copilot Seat Access</a></li>
+          <li><a href="https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot" target="_blank" rel="noopener">Getting Started with Copilot</a></li>
+          <li><a href="https://innersourcecommons.org/learn/patterns/" target="_blank" rel="noopener">Inner Source Patterns</a></li>
+        </ul>
+      </section>
+
       <PhaseNavigation
         prevPath="/phase-4"
         prevLabel="Phase 4: Customization"

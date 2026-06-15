@@ -115,6 +115,17 @@ export default function Phase1() {
         </ul>
       </section>
 
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://resources.github.com/copilot-trust-center/" target="_blank" rel="noopener">GitHub Copilot Trust Center</a></li>
+          <li><a href="https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-business" target="_blank" rel="noopener">GitHub Copilot Business — Privacy & Data</a></li>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/configuring-content-exclusions-for-github-copilot" target="_blank" rel="noopener">Content Exclusions Documentation</a></li>
+          <li><a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise" target="_blank" rel="noopener">GitHub Copilot Audit Log Events</a></li>
+          <li><a href="https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/roles-in-an-enterprise" target="_blank" rel="noopener">GitHub Enterprise Roles & Permissions</a></li>
+        </ul>
+      </section>
+
       <PhaseNavigation
         prevPath="/"
         prevLabel="Overview"

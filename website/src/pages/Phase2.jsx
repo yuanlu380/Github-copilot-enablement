@@ -132,6 +132,17 @@ export default function Phase2() {
         </ul>
       </section>
 
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization" target="_blank" rel="noopener">Managing Policies for Copilot</a></li>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/configuring-content-exclusions-for-github-copilot" target="_blank" rel="noopener">Configuring Content Exclusions</a></li>
+          <li><a href="https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/provisioning-user-accounts-for-enterprise-managed-users" target="_blank" rel="noopener">SCIM Provisioning for EMU</a></li>
+          <li><a href="https://docs.github.com/en/billing/managing-billing-for-github-copilot/about-billing-for-github-copilot" target="_blank" rel="noopener">GitHub Copilot Billing</a></li>
+          <li><a href="https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot" target="_blank" rel="noopener">Copilot Features by Plan</a></li>
+        </ul>
+      </section>
+
       <PhaseNavigation
         prevPath="/phase-1"
         prevLabel="Phase 1: Discovery"

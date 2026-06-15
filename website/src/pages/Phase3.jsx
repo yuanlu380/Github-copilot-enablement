@@ -122,6 +122,17 @@ export default function Phase3() {
         </ul>
       </section>
 
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/rolling-out-github-copilot-at-scale" target="_blank" rel="noopener">Rolling Out GitHub Copilot at Scale</a></li>
+          <li><a href="https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/measuring-the-impact-of-copilot" target="_blank" rel="noopener">Measuring Copilot Impact</a></li>
+          <li><a href="https://docs.github.com/en/rest/copilot/copilot-usage" target="_blank" rel="noopener">Copilot Usage API</a></li>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/reviewing-usage-data-for-github-copilot-in-your-organization" target="_blank" rel="noopener">Copilot Admin Dashboard</a></li>
+          <li><a href="https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/" target="_blank" rel="noopener">Research: Copilot Productivity Impact</a></li>
+        </ul>
+      </section>
+
       <PhaseNavigation
         prevPath="/phase-2"
         prevLabel="Phase 2: Configuration"

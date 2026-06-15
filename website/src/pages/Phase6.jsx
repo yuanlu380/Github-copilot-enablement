@@ -107,11 +107,25 @@ ROI multiple:                          ~153x`}</pre>
 
       <section className="content-section">
         <h2>Key Artifacts</h2>
+      <section className="content-section">
+        <h2>Key Artifacts</h2>
         <ul>
           <li>Monthly usage report template</li>
           <li>Quarterly ROI update for leadership</li>
           <li>Policy review calendar with owners</li>
           <li>Exception/change request process</li>
+        </ul>
+      </section>
+
+      <section className="content-section">
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/reviewing-usage-data-for-github-copilot-in-your-organization" target="_blank" rel="noopener">Reviewing Copilot Usage Data</a></li>
+          <li><a href="https://docs.github.com/en/rest/copilot/copilot-usage" target="_blank" rel="noopener">Copilot Usage API</a></li>
+          <li><a href="https://docs.github.com/en/rest/copilot/copilot-metrics" target="_blank" rel="noopener">Copilot Metrics API</a></li>
+          <li><a href="https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise" target="_blank" rel="noopener">GitHub Audit Log</a></li>
+          <li><a href="https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/" target="_blank" rel="noopener">Research: Copilot Productivity Impact</a></li>
+          <li><a href="https://dora.dev/guides/dora-metrics-four-keys/" target="_blank" rel="noopener">DORA Metrics</a></li>
         </ul>
       </section>
 
