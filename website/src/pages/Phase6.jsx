@@ -123,8 +123,6 @@ ROI multiple:                          ~153x`}</pre>
 
       <section className="content-section">
         <h2>Key Artifacts</h2>
-      <section className="content-section">
-        <h2>Key Artifacts</h2>
         <ul>
           <li>Monthly usage report template</li>
           <li>Quarterly ROI update for leadership</li>
