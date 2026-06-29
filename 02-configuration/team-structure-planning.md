@@ -18,14 +18,30 @@ Enterprise Account
 | Org separation logic | By business unit / by product / by compliance boundary | |
 | Enterprise account needed? | Required for unified billing + policy | [ ] Yes [ ] No |
 
-### Multi-Org Scenarios
+### Recommendation: Single Organization
 
-| Scenario | When to Use |
-|----------|-------------|
-| Single org | <500 devs, one business unit, simple compliance |
-| Org per business unit | Large enterprise, separate billing, different policies |
-| Org per compliance boundary | PCI vs. non-PCI, ITAR-classified vs. unclassified |
-| Org per product | Isolated teams, separate open-source vs. internal |
+> **GitHub recommends setting up only one organization for your users and repositories.** Only create multiple organizations if specific constraints require it.
+
+### Multi-Org Trade-offs
+
+| Concern | Impact |
+|---------|--------|
+| Configuration sharing | ❌ **Not possible** — you must configure everything from scratch per org (SSO, policies, rulesets, Copilot settings). Increases risk of config drift and errors. |
+| GitHub Apps & integrations | ❌ **Extra cost** — many apps/integrations must be installed and licensed separately per org |
+| Management overhead | ❌ **Significantly harder** — separate admin teams, separate audit logs, no unified view |
+| Billing | ❌ Split invoices unless using Enterprise account to unify |
+| Cross-org collaboration | ❌ Users can't easily reference issues/PRs across orgs |
+| Team sync (SCIM/EMU) | ❌ Must configure IdP provisioning per org separately |
+
+### When Multi-Org Is Justified
+
+| Scenario | When to Use | Justification |
+|----------|-------------|---------------|
+| Single org | <500 devs, one business unit, simple compliance | **Default — start here** |
+| Org per compliance boundary | PCI vs. non-PCI, ITAR-classified vs. unclassified | Regulatory mandate requires hard separation |
+| Org per business unit | Large enterprise (>1000 devs), separate billing | Business units operate independently with different policies |
+| Org per product | Separate open-source vs. internal | Open-source repos need different visibility/contributor model |
+| Org per acquisition | Recently acquired company not yet integrated | Temporary until identity/policy integration complete |
 
 ## Team Hierarchy Design
 
