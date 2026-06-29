@@ -28,10 +28,10 @@ export default function Home() {
         <h2>The 6 Phases</h2>
         <div className="phase-cards">
           <PhaseCard number={1} title="Discovery & Compliance" description="Identify stakeholders, assess compliance requirements, audit tooling" path="/phase-1" />
-          <PhaseCard number={2} title="Configuration" description="Set org policies, content exclusions, SCIM groups, seat allocation" path="/phase-2" />
+          <PhaseCard number={2} title="Configuration" description="Org policies, content exclusions, team structure, branch protection, network/proxy, permissions, budgets" path="/phase-2" />
           <PhaseCard number={3} title="Pilot" description="Select teams, capture baselines, deliver training, run 4-week trial" path="/phase-3" />
           <PhaseCard number={4} title="Customization" description="Create custom instructions, prompt files, and agent definitions" path="/phase-4" />
-          <PhaseCard number={5} title="Rollout" description="Champion network, phased waves, external contractor enablement" path="/phase-5" />
+          <PhaseCard number={5} title="Rollout" description="Champion network, phased waves, contractor enablement, troubleshooting" path="/phase-5" />
           <PhaseCard number={6} title="Governance" description="ROI reporting, policy reviews, continuous improvement" path="/phase-6" />
         </div>
       </section>
