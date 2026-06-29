@@ -120,8 +120,30 @@ to our internal wiki.`}</pre>
           <li>Champion roster with assigned teams</li>
           <li>Rollout schedule with dates and seat counts</li>
           <li>Developer onboarding guide published to internal wiki</li>
+          <li>Troubleshooting guide distributed to all developers</li>
           <li>External contractor agreement addendum (if applicable)</li>
         </ul>
+      </section>
+
+      <section className="content-section">
+        <h2>Troubleshooting Guide</h2>
+        <p>Distribute this alongside the onboarding guide. Most issues fall into these categories:</p>
+        <table className="content-table">
+          <thead>
+            <tr><th>Issue</th><th>Likely Cause</th><th>Fix</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>No suggestions appearing</td><td>Extension disabled or content excluded</td><td>Check status bar icon; verify repo not excluded</td></tr>
+            <tr><td>"Unable to connect"</td><td>Proxy/firewall blocking</td><td>Add Copilot domains to allowlist; set NODE_EXTRA_CA_CERTS</td></tr>
+            <tr><td>Auth failure / "Sign in"</td><td>SSO token expired</td><td>Re-authorize at github.com/settings/connections</td></tr>
+            <tr><td>Slow suggestions (&gt;3s)</td><td>Proxy latency or large context</td><td>Check VPN routing; close irrelevant tabs</td></tr>
+            <tr><td>Bad/irrelevant suggestions</td><td>Missing context</td><td>Open relevant files; check copilot-instructions.md</td></tr>
+            <tr><td>Extension conflicts</td><td>Tabnine/Codeium/CodeWhisperer</td><td>Disable other AI suggestion extensions</td></tr>
+          </tbody>
+        </table>
+        <div className="callout callout-warning">
+          <strong>Escalation path:</strong> Self-service → Copilot Champion → #copilot-support channel → IT ticket → GitHub Support (support.github.com)
+        </div>
       </section>
 
       <section className="content-section">

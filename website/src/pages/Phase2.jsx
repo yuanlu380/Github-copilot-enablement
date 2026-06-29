@@ -145,7 +145,110 @@ and a seat allocation plan with budget.`}</pre>
           <li>Content exclusion list with owners and review dates</li>
           <li>SCIM group mappings configured and tested</li>
           <li>Budget approval from finance</li>
+          <li>Team structure plan with IdP group mappings</li>
+          <li>Repository permission matrix (team → repo → access level)</li>
+          <li>Outside collaborator policy (for contractors/vendors)</li>
+          <li>Branch protection rulesets (enterprise + PCI-scoped)</li>
+          <li>Network/proxy allowlist configured and tested</li>
+          <li>Premium request budget caps set</li>
         </ul>
+      </section>
+
+      <section className="content-section">
+        <h2>Additional Configuration (GitHub Admin Setup)</h2>
+
+        <div className="step">
+          <div className="step-number">6</div>
+          <div className="step-content">
+            <h3>Plan Team Structure</h3>
+            <p>Design your GitHub team hierarchy before assigning seats:</p>
+            <pre className="code-block">{`@org/all-engineering          (parent — announcements)
+├── @org/platform-team        (infra, DevOps)
+├── @org/backend-team         (API, services)
+│   └── @org/payments-team    (PCI-scoped — restricted)
+├── @org/frontend-team        (web, mobile)
+├── @org/security-team        (AppSec, reviews)
+└── @org/contractors          (external — limited repos)`}</pre>
+            <div className="callout callout-warning">
+              <strong>Single org recommended:</strong> GitHub recommends one organization. Multi-org means configs can't be shared, apps cost extra per org, and management is significantly harder.
+            </div>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">7</div>
+          <div className="step-content">
+            <h3>Set Repository Permissions</h3>
+            <table className="content-table">
+              <thead>
+                <tr><th>Team</th><th>Repos</th><th>Permission</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>@org/platform-team</td><td>org/platform-*</td><td>Admin</td></tr>
+                <tr><td>@org/backend-devs</td><td>org/api-*, org/services-*</td><td>Write</td></tr>
+                <tr><td>@org/security-team</td><td>All repositories</td><td>Read</td></tr>
+                <tr><td>@org/contractors</td><td>Assigned repos only</td><td>Write (limited)</td></tr>
+              </tbody>
+            </table>
+            <p>Set base org permission to <strong>None</strong> — access only through team membership.</p>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">8</div>
+          <div className="step-content">
+            <h3>Configure Branch Protection & Rulesets</h3>
+            <p>Enterprise-level rulesets enforce code quality across all repos:</p>
+            <table className="content-table">
+              <thead>
+                <tr><th>Rule</th><th>Setting</th><th>PCI-DSS Relevance</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Require pull request</td><td>Yes (2 approvals)</td><td>Req 6.3.2: Code review</td></tr>
+                <tr><td>Require CODEOWNERS review</td><td>Yes</td><td>Req 7: Authorized reviewers</td></tr>
+                <tr><td>Require status checks</td><td>Yes (CI + CodeQL)</td><td>Req 6.3.1: Automated testing</td></tr>
+                <tr><td>Block force pushes</td><td>Yes</td><td>Audit trail integrity</td></tr>
+                <tr><td>Signed commits (PCI repos)</td><td>Yes</td><td>Req 8: Identity verification</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">9</div>
+          <div className="step-content">
+            <h3>Outside Collaborator Policy</h3>
+            <p>For contractors and external vendors:</p>
+            <ul>
+              <li>Only org owners can invite outside collaborators</li>
+              <li>Default permission: <strong>Read</strong> (elevated per-repo as needed)</li>
+              <li>Access expires after 90 days (review and renew)</li>
+              <li>No Copilot seat assigned to outside collaborators by default</li>
+              <li>Quarterly access review by GitHub admin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">10</div>
+          <div className="step-content">
+            <h3>Network & Proxy Configuration</h3>
+            <p>Ensure developer machines can reach Copilot services. Request these domains through your network team:</p>
+            <pre className="code-block">{`# Required domains (HTTPS/443)
+github.com
+api.github.com
+*.githubusercontent.com
+*.githubcopilot.com
+default.exp-tas.com
+
+# If SSL inspection is active:
+# Set NODE_EXTRA_CA_CERTS=/path/to/corporate-ca.pem
+# Or bypass inspection for Copilot domains`}</pre>
+            <div className="callout callout-warning">
+              <strong>#1 support issue:</strong> Copilot fails silently when blocked by proxy/firewall. Test connectivity before pilot starts.
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="content-section">
