@@ -30,10 +30,14 @@ Our teams:
 - Wave 3 (contractors): [X people, limited repo access]
 
 Pilot lessons learned: [key feedback items]
+Common issues hit during pilot: [network/auth/extension conflicts]
 
-Generate a rollout schedule, champion network plan,
-and a developer onboarding guide we can publish
-to our internal wiki.`}</pre>
+Generate:
+1. Rollout schedule with wave dates
+2. Champion network plan (1 per 10-15 devs)
+3. Developer onboarding guide for internal wiki
+4. Troubleshooting guide for common issues
+5. Escalation path (self-service → champion → IT → GitHub Support)`}</pre>
         </div>
       </section>
 

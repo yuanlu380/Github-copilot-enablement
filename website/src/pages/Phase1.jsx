@@ -27,11 +27,14 @@ export default function Phase1() {
 - Developer headcount: [X internal, Y contractors]
 - Compliance frameworks: [SOX, HIPAA, ITAR, PCI-DSS, etc.]
 - Primary languages: [Java, Python, TypeScript, etc.]
-- Code hosting: [GitHub Enterprise Cloud/Server]
+- Code hosting: [GitHub Enterprise Cloud/Server/EMU]
 - External users: [describe contractor/partner access]
+- Network: [proxy/VPN/SSL inspection details]
+- Current GitHub setup: [new org or existing]
 
 Generate a compliance assessment, stakeholder RACI matrix,
-and identify which repos need content exclusions.`}</pre>
+identify which repos need content exclusions, and flag any
+network/proxy requirements for Copilot connectivity.`}</pre>
         </div>
       </section>
 

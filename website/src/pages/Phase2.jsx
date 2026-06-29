@@ -29,9 +29,18 @@ export default function Phase2() {
 
 We use [Entra ID / Okta] for SSO with SCIM provisioning.
 We want [3 rollout waves / org-wide day 1].
+We have [X internal devs + Y contractors/vendors].
+Our network has [proxy / SSL inspection / VPN].
 
-Generate the content exclusion config, SCIM group mappings,
-and a seat allocation plan with budget.`}</pre>
+Generate:
+1. Content exclusion config
+2. SCIM group → team mappings
+3. Seat allocation plan with budget
+4. Team structure with repo permission matrix
+5. Branch protection rulesets (with PCI-specific rules)
+6. Outside collaborator policy
+7. Network allowlist for our proxy team
+8. Premium request budget plan`}</pre>
         </div>
       </section>
 
